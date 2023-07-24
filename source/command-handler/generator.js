@@ -14,8 +14,7 @@ module.exports = {
     };
 
     let { number } = input;
-
-    const result = Math.floor(Math.random() * number + 1)
+    const result = Math.floor(Math.random() * (number + 1));
     await interaction.reply({ content: `Random value betwen \`0\` and \`${number}\`\n \`\`\`Random value: #${result}\`\`\`` })
   }
 };
